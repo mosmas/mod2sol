@@ -1,0 +1,80 @@
+/* This is the style sheet for Module 2 */
+*{
+	box-sizing:border-box;
+}
+body{
+	background: #6C9689;
+}
+h1{
+	text-align: center;
+	text-decoration-style: dotted;
+	opacity: .6;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Vast Shadow', cursive;
+}
+section div{
+	border-radius: 5px;
+	margin: 5px 0 5px 0px;
+	padding: 0px 0px 5px 5PX;
+	border: 1px;
+
+}
+section div p {
+	clear:both;
+	margin-top: 5px;
+}
+section div span{
+	background: black;
+	padding: 0px 5px 5px 10px;
+	float: right;
+	clear: left;
+	margin-right: 0px;
+	position: relative;
+	color: white;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+.video{
+	color:white;
+	background: brown;
+}
+.document{
+	color:white;
+	background: blue;
+	font-family: 'Playball', cursive;
+}
+.themes{
+	color:olive;
+	background: yellow;
+}
+
+/* floats and boarders */
+.col-lg-4, .col-md-6,.col-sm-12{
+	float: left;
+	border: 1px solid black;
+
+}
+
+/* Large devices*/
+@media (min-width: 992px) {
+	.col-lg-4{
+		width: 33.33%;
+	}
+}
+/*Medium devices */
+@media (min-width: 768px) and (max-width:991px){
+	
+ .col-md-6{
+		width: 50%;
+	}
+	.col-md-12{
+		width: 100%;		
+	}
+}
+/*Small devices */
+@media (max-width: 767px) {
+	.col-sm-12{
+		width: 100%;		
+	}
+}
