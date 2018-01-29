@@ -1,80 +1,84 @@
 /* This is the style sheet for Module 2 */
 *{
 	box-sizing:border-box;
+	margin: 0px;
+	position: relative;
 }
+
 body{
-	background: #6C9689;
-}
+	background: black;
+	color:white;
+	}
 h1{
 	text-align: center;
 	text-decoration-style: dotted;
 	opacity: .6;
-	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Vast Shadow', cursive;
 }
-section div{
-	border-radius: 5px;
-	margin: 5px 0 5px 0px;
-	padding: 0px 0px 5px 5PX;
-	border: 1px;
+.row{
+	width: 100%;
+}
+.row div{
+	border: 1px solid;
+	margin: 5px;
+}
+.row div p{
+	clear:both;
+	margin: 10px;
+	width: 90%;
 
 }
-section div p {
-	clear:both;
-	margin-top: 5px;
-}
-section div span{
-	background: black;
-	padding: 0px 5px 5px 10px;
+.menu-item-1, .menu-item-2, .menu-item-3{
+	margin: 0px, 0px, 10px, 10px;
+	font-family: 'Playball', cursive;
 	float: right;
-	clear: left;
-	margin-right: 0px;
-	position: relative;
-	color: white;
-	border-radius: 5px;
-	text-transform: uppercase;
+	padding: 6px;
+	clear:left;
+	width: 100px;
+	text-align: center;
 }
-.video{
+.menu-item-1{
 	color:white;
-	background: brown;
+	background: green;
 }
-.document{
+.menu-item-2{
 	color:white;
 	background: blue;
-	font-family: 'Playball', cursive;
 }
-.themes{
+.menu-item-3{
 	color:olive;
 	background: yellow;
 }
 
 /* floats and boarders */
-.col-lg-4, .col-md-6,.col-sm-12{
+.col-lg-4, .col-md-6,.col-md-12{
 	float: left;
-	border: 1px solid black;
-
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /* Large devices*/
 @media (min-width: 992px) {
-	.col-lg-4{
-		width: 33.33%;
-	}
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-lg-4 {
+    width: 32.33%;
+  }
+
 }
 /*Medium devices */
 @media (min-width: 768px) and (max-width:991px){
-	
- .col-md-6{
-		width: 50%;
-	}
-	.col-md-12{
-		width: 100%;		
-	}
+ .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-6 {
+    width:48.6%;
 }
-/*Small devices */
-@media (max-width: 767px) {
-	.col-sm-12{
-		width: 100%;		
-	}
+  .col-md-12 {
+    width: 98.9%;
+  }
 }
